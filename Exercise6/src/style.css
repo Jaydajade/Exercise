@@ -1,0 +1,352 @@
+:root{
+  --spring-bgcolor:#4e1859;
+  --free-bgcolor:#8ecece;
+  --milk-bgcolor:#524242;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.leftbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.leftbar ul li,
+.rightbar ul li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.leftbar ul li a,
+.rightbar ul li a {
+  color: #060b14;
+  text-decoration: none;
+}
+
+.rightbar a i {
+  margin-right: 8px;
+}
+
+.button1{
+    background-color: white;
+    color:black ;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.button2{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.button1:hover{
+    background-color: gray;
+    color: white;
+}
+.button2:hover{
+    background-color: gray;
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: darkgray;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+.springtext{
+  background-color: var(--spring-bgcolor);
+  color: white;
+}
+
+.springtext button{
+  background-color: var(--spring-bgcolor);
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.springtext button:hover{
+  background-color: #772687;
+}
+
+.spring {
+  display: flex;
+  justify-content: center;  
+  padding: 30px;
+}
+.springtext,
+.springimg {
+  width: 50%;
+  
+}
+
+.springtext{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.springimg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.freetext {
+  background-color: var(--free-bgcolor);
+  color: darkolivegreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+.freetext button {
+  background-color: var(--free-bgcolor);
+  color: darkolivegreen;
+  border: 2px solid darkolivegreen;
+  border-radius: 25px;
+  padding: 8px;
+  width: 90px;
+  font-size: 12px;
+}
+
+.freetext button:hover{
+  background-color:#3ec9c9
+;
+}
+
+.free {
+  display: flex;
+  justify-content: center;  
+  padding: 30px;
+}
+.freetext, .freeimg{
+  width: 50%;
+}
+.freeimg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.milk{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.milktext {
+  background-color: var(--milk-bgcolor);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.milktext,
+.milkimg {
+  width: 50%;
+}
+
+.milkimg img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.description{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.description1{
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;     
+  align-items: flex-start;     
+  gap: 50px;                   
+  flex-wrap: wrap;             
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.column {
+  width: 170px;
+  flex-shrink: 0;              
+}
+
+.links h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+.links ul li{
+    margin-block: 20px;
+}
+.links ul li a {
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.Social-icon ul li {
+  display: inline;
+  margin-right: 13px;
+  
+}
+
+.Social-icon {
+  padding: 20px;
+}
+
+.legal ul li a {
+  text-decoration: none;
+  color: #060b14;
+}
+
+.legal ul li {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.Copy  {
+  margin-left: 1px;
+  color: #999;
+  font-size: smaller;
+}
+
+@media (max-width: 768px) {
+
+  /* Navbar: Stack vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .leftbar, .rightbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .leftbar ul li,
+  .rightbar ul li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .button1, .button2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Sections: Stack image/text vertically */
+  .spring,
+  .free,
+  .milk {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .springtext,
+  .springimg,
+  .freetext,
+  .freeimg,
+  .milktext,
+  .milkimg {
+    width: 100%;
+  }
+
+  /* Footer link columns stack */
+  .links {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .Social-icon ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .Social-icon ul li {
+    margin: 0;
+  }
+
+  .legal ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .legal ul li {
+    margin-left: 0;
+  }
+
+  .Copy {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
