@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chicago</title>
   </head>
-  <body class="bg-gray-100">
-    <section class="Navbar fixed top-5 left-5 right-5 bg-white rounded-lg shadow-md flex justify-between items-center px-6 py-4">
+  <body class="bg-gray-200">
+    <section class="Navbar bg-white rounded-lg shadow-md flex justify-between items-center px-6 py-4 mt-5 mx-5">
     <div class="left-Navbar">
       <ul class="flex space-x-4">
         <li><a href="#Markets">Markets</a></li>
@@ -31,9 +35,208 @@
         </button></li>
       <li><button class="rounded-lg px-4 py-2 bg-black text-white">Get in touch</button></li>
     </ul>
-    </div>
-    
+    </div> 
     </section>
+
+    <section class ="chicago-section mt-5 px-5">
+      <div class="relative rounded-lg overflow-hidden shadow-lg">
+        <img src="https://images.pexels.com/photos/1823680/pexels-photo-1823680.jpeg?cs=srgb&dl=pexels-chaitaastic-1823680.jpg&fm=jpg"  class="w-full h-96 object-cover"/>
+        
+        <div class="absolute inset-0 bg-opacity-30 flex items-end justify-between p-8">
+          <div class="text-white">
+             <h1 class="text-6xl font-bold mb-2" style="font-family: 'Lora', serif;">Chicago</h1>
+            <p class="text-xl">Outdoor Ads</p>
+          </div>
+        <div class="bg-gray-800 bg-opacity-60 text-white p-6 rounded-lg max-w-sm">
+          <h3 class="text-xl font-semibold mb-4">Sales Office</h3>
+          <div class="space-y-2 text-sm">
+              <p>11, North Milwaukee Avenue</p>
+              <p>Suite 1500</p>
+              <p>Chicago, IL 60652</p>
+              <p>773-890-3778</p>
+          </div>
+          <button class="mt-4 w-full bg-white text-black py-2 px-4 rounded-lg hover:bg-gray-200">Contact us</button>
+        </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="mt-0 px-5">
+      <div class="bg-white rounded-lg px-10 py-10 ">
+        <div class="flex gap-8" >
+          <div class="flex-1">
+            <h1 class="text-5xl text-black">Products</h1>
+            <p class="text-xl text-gray-600 py-7 leading-relaxed">Technology and media solution for cities,<br>
+              transit systems, air travel, destinations, and<br>
+              other public spaces
+            </p>
+          </div>
+
+          <div class="flex-1 flex flex-col gap-2">
+          <div class="bg-gray-200 rounded-lg py-5 px-5 relative">
+          <div class="flex gap-20">
+            <div class="flex-1">
+            <h1 class="text-3xl text-black px-5">Transit</h1>
+
+            <div class="absolute top-5 right-5 bg-white rounded-lg w-12 h-12 flex items-center justify-center">
+              <i class="fa-solid fa-bus fa-xl"></i>
+            </div>
+
+            <div class="flex gap-1 mt-4">
+              <div class = "bg-white rounded-lg px-5 w-24 h-24 relative mt-4">
+                <h2 class="absolute bottom-2 left-2">Interior<br>Bus</h2>
+              </div>
+              <div class = "bg-white rounded-lg px-5 w-24 h-24 relative mt-4">
+                <h2 class="absolute bottom-2 left-2">Rail Station<br>Media</h2>
+              </div>
+              <div class = "bg-white rounded-lg px-5 w-24 h-24 relative mt-4">
+                <h2 class="absolute bottom-2 left-2">Digital<br>Displays</h2>
+              </div>
+            </div>
+
+            <div class="flex gap-1">
+              <div class = "bg-white rounded-lg px-5 w-24 h-24 relative mt-1">
+                <h2 class="absolute bottom-2 left-2">Interior<br>Rail</h2>
+              </div>
+              <div class = "bg-black rounded-lg px-5 w-24 h-24 relative mt-1">
+                  <span class="absolute top-2 left-2 text-white text-lg">→</span>
+                <h2 class="absolute bottom-2 left-2 text-white">Exterior Rail</h2>
+              </div>
+            </div>
+
+            </div>
+            
+            </div>
+            
+        </div>
+          <div class="bg-gray-200 rounded-lg h-20 flex items-center relative" >
+                <h1 class="text-3xl text-black px-5">Air</h1>
+              <div class="absolute top-5 right-5 bg-white rounded-lg w-12 h-12 flex items-center justify-center">
+                <i class="fa-solid fa-plane-up fa-xl"></i>
+              </div>
+          </div>
+
+          <div class="bg-gray-200 rounded-lg h-20 flex items-center relative" >
+                <h1 class="text-3xl text-black px-5">Programmatic</h1>
+                <div class="absolute top-5 right-5 bg-white rounded-lg w-12 h-12 flex items-center justify-center">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+          </div>
+        </div>     
+      </div>
+      </div>
+    </section>
+
+    <section class="mt-0 px-5">
+      <div class="rounded-lg overflow-hidden">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/images6/Chicago-Wallpaper-Desktop.jpg" class="w-full  object-cove"r>
+      </div>
+    </section>
+
+    <section class="mt-1 px-5">
+      <div class="bg-white rounded-lg">
+        <div class="flex gap-8">
+          <div class="flex-1">
+            <h1 class="text-5xl px-10 py-14">Chicago Highlights</h1>
+            <div class="px-10 mt-24 mb-12">
+              <button class="mt-4 w-60 bg-white border-2 text-black py-4 px-4 rounded-lg hover:bg-gray-200">Download Media Kit</button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <p class="text-2xl text-gray-500 py-14">As one of North America's most innovative media<br>companies, we leverage the power of creative<br>excellence, unbeatable locations, and technology<br>driven smart audience data to change the game for<br>advertisers.</p>
+          </div>
+        </div>
+     </div>
+    </section>
+
+    <section class="px-5">
+      <div class="flex gap-1">
+        <div class="flex-1 bg-white rounded-lg px-10 mt-1 py-8 text-center">
+          <h3 class="text-gray-500">Chicagoans reach per week</h3>
+          <div class="mt-10 py-5">
+            <h1 class="text-5xl ">91%</h1>
+          </div>
+        </div>
+        <div class="flex-1 bg-white rounded-lg px-10 mt-1 py-8 text-center">
+          <h3 class="text-gray-500">Digital displays in Chicago's</h3>
+          <div class="mt-10 py-5">
+          <h1 class="text-5xl">270+</h1>
+          </div>
+        </div>
+        <div class="flex-1 bg-white rounded-lg px-10 mt-1 py-8 text-center">
+          <h3 class="text-gray-500">monthly CTA ridership</h3>
+          <div class="mt-10 py-5">
+          <h1 class="text-5xl">32mm</h1>
+          </div>
+        </div>
+        <div class="flex-1 bg-white rounded-lg px-10 mt-1 py-8 text-center">
+          <h3 class="text-gray-500">Digital displays in Chicago's</h3>
+          <div class="mt-10 py-5">
+          <h1 class="text-5xl">43%</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 mt-1">
+      <div class="flex gap-1">
+        <div class="flex-1 rounded-lg overflow-hidden h-96">
+          <img src="https://i.pinimg.com/736x/9e/41/eb/9e41eb10253da5ab11e549b84ea727ba.jpg" >
+        </div>
+
+         <div class="flex-1 rounded-lg overflow-hidden h-96">
+          <img src="https://i.pinimg.com/736x/bd/c6/24/bdc624a7237c44401f2d0971a72ceffe.jpg" >
+        </div>
+
+         <div class="flex-1 rounded-lg overflow-hidden h-96">
+          <img src="https://i.pinimg.com/736x/ef/6a/15/ef6a15145dd086a8af28604c6dd7bd38.jpg " >
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-1">
+      <div class="flex gap-1 bg-gray-100 rounded-lg">
+        <div class="flex-1 ml-5">
+          <h1 class="mt-10 text-2xl">Media</h1>
+          <div class="mt-7 p">
+            <h1 class="text-gray-500">Digital OOH</h1>
+            <h1 class="text-gray-500">Billboards</h1>
+            <h1 class="text-gray-500">Street Furniture</h1>
+            <h1 class="text-gray-500">Place-based</h1>
+            <h1 class="text-gray-500 pb-14">Social OOH</h1>
+          </div>
+        </div>
+        <div class="flex-1 ml-5">
+          <h1 class="mt-10 text-2xl">About</h1>
+          <div class="mt-7 p">
+            <h1 class="text-gray-500">Leadership</h1>
+            <h1 class="text-gray-500">Partners</h1>
+            <h1 class="text-gray-500">Sustainability</h1>
+            <h1 class="text-gray-500">Investors</h1>
+          </div>
+        </div>
+        <div class="flex-1 ml-5">
+          <h1 class="mt-10 text-2xl">Resources</h1>
+          <div class="mt-7 p">
+            <h1 class="text-gray-500">Blog</h1>
+            <h1 class="text-gray-500">Media Kits</h1>
+            <h1 class="text-gray-500">Case Stadies</h1>
+            <h1 class="text-gray-500">Specs</h1>
+          </div>
+        </div>
+          <div class="flex-1 ml-5">
+          <h1 class="mt-10 text-2xl">Connect with us</h1>
+          <div class="mt-7 p">
+            <button class="bg-white rounded-lg text-black w-72 h-14 flex items-center text-left px-6 hover:bg-gray-200">Email
+              <span class="text-black text-2xl ml-48 flex items-center">→</span>
+            </button>
+             
+          </div>
+        </div>
+
+    </section>
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
