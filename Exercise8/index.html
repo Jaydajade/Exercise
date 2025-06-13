@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section class="flex items-center justify-center min-h-screen">
+
+      <div class="bg-gray-800 rounded-2xl w-80 min-h-[420px]">
+        <div class="text-right">
+              
+              <div id="previousCalculation" class="text-gray-400 text-sm h-6 overflow-hidden"></div>
+                
+              <div id="display" class="text-white text-3xl font-mono font-bold mt-2 min-h-[2.5rem] flex items-center justify-end">0</div>
+        </div>
+
+        <div class="grid grid-cols-4 gap-3">
+          <button onclick="clearAll()"  class="btn-base function-btn">C</button>
+          <button onclick="toggleSign()" class="btn-base function-btn">+/-</button>
+          <button onclick="percentage()" class="btn-base function-btn">%</button>
+          <button onclick="setOperation('÷')" class="btn-base operator-btn">÷</button>
+
+          <button onclick="appendNumber('7')" class="btn-base number-btn">7</button>
+          <button onclick="appendNumber('8')" class="btn-base number-btn">8</button>
+          <button onclick="appendNumber('9')" class="btn-base number-btn">9</button>
+          <button onclick="setOperation('×')" class="btn-base operator-btn">×</button>
+
+          <button onclick="appendNumber('4')" class="btn-base number-btn">4</button>
+          <button onclick="appendNumber('5')" class="btn-base number-btn">5</button>
+          <button onclick="appendNumber('6')" class="btn-base number-btn">6</button>
+          <button onclick="setOperation('-')" class="btn-base operator-btn">-</button>
+
+          <button onclick="appendNumber('1')" class="btn-base number-btn">1</button>
+          <button onclick="appendNumber('2')" class="btn-base number-btn">2</button>
+          <button onclick="appendNumber('3')" class="btn-base number-btn">3</button>
+          <button onclick="setOperation('+')" class="btn-base operator-btn">+</button>
+
+          <button onclick="appendNumber('0')" class="btn-base number-btn col-span-2">0</button>
+          <button onclick="appendDecimal()" class="btn-base number-btn">.</button>
+          <button onclick="calculate()" class="btn-base cal-btn">=</button>
+
+        </div>
+      </div>
+    </section>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

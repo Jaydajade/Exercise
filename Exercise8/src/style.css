@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.btn-base{
+  @apply h-14 w-full rounded-xl text-lg font-semibold transition-all duration-200 
+         active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 
+         shadow-md hover:shadow-lg;
+}
+.number-btn {
+  @apply bg-gray-700 text-white hover:bg-gray-600;
+}
+
+.operator-btn{
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+.function-btn{
+  @apply bg-indigo-600 text-white hover:bg-indigo-700;
+}
+.cal-btn{
+  @apply bg-green-600 text-white hover:bg-green-700;
+}
